@@ -1,0 +1,25 @@
+.production {
+    background: -webkit-linear-gradient(90deg, rgb(9, 9, 9), rgb(79, 73, 43), rgb(9, 9, 9));
+    background: -moz-linear-gradient(90deg, rgb(9, 9, 9), rgb(79, 73, 43), rgb(9, 9, 9));
+    background: linear-gradient(90deg, rgb(9, 9, 9), rgb(79, 73, 43), rgb(9, 9, 9));
+    padding-top: 11%;
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row nowrap;
+        font-family: "Jost, sans-serif";
+        font-weight: 500;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-flow: row nowrap;
+        gap: 11px;
+        margin-top: 9%;
+    }
+    &__photo {
+        max-width: 540px;
+    }
+}

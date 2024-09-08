@@ -16,13 +16,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <!-- <div class="header__logo">
+            <div class="header__logo">
                 <img class="header__logo-img" src="img/logo.png" alt="logo">
-            </div> -->
+            </div>
             <div class="header__text">
                 <h1 class="header__main-title fz96">"КПД"</h1>
                 <h2 class="header__main-subtitle fz40">КОММЕРЧЕСКИЙ ПРОМЫШЛЕННЫЙ ДИЗАЙН
@@ -95,25 +96,88 @@
         </div>
         <div class="container">
             <div class="production__wrapper">
-                    <img class="production__photo" src="img/slide1.jpg" alt="photo">
-                    <img class="production__photo" src="img/slide2.jpg" alt="photo">
-                    <img class="production__photo" src="img/slide3.jpg" alt="photo">
+                    <img class="production__photo" src="img/production_photo.jpg" alt="photo">
+                    <img class="production__photo" src="img/production_photo-2.jpg" alt="photo">
+                    <img class="production__photo" src="img/production_photo-3.jpg" alt="photo">
                 </div>
             </div>
         </div>
     </section>
-    <section class="work">
-        <div class="work__title">
-            <h2 class="work__title-text fz96">Наши работы</h2>
+    <section class="projects">
+        <div class="projects__title">
+            <h2 class="projects__title-text fz96">Наши работы</h2>
         </div>
         <div class="container">
-            <div class="work__wrapper">
-                    <img class="work__photo" src="img/slide1.1.jpg" alt="photo">
-                    <img class="work__photo" src="img/slide2.2.jpg" alt="photo">
-                    <img class="work__photo" src="img/slide3.3.jpg" alt="photo">
+            <div class="projects__wrapper">
+                <div class="projects__item">
+                    <img src="img/work_photo.jpg" alt="ЖК Савин Хаус" class="projects__image">
+                    <div class="projects__info">
+                        <p class="projects__name fz24">ЖК Савин Хаус</p>
+                        <p class="projects__year fz24">2024</p>
+                    </div>
+                </div>
+                
+                <div class="projects__item">
+                    <img src="img/work_photo-2.jpg" alt="ЖК UNO" class="projects__image">
+                    <div class="projects__info">
+                        <p class="projects__name fz24">ЖК UNO</p>
+                        <p class="projects__year fz24">2024</p>
+                    </div>
+                </div>
+            
+                <div class="projects__item">
+                    <img src="img/work_photo-3.jpg" alt="СИБУР" class="projects__image">
+                    <div class="projects__info">
+                        <p class="projects__name fz24">СИБУР</p>
+                        <p class="projects__year fz24">2024</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </div>     
     </section>
+    <section class="product">
+        <div class="container">
+            <div class="product__info">
+                <h2 class="product__title fz96">Фрезеровка <br> Композита 4мм</h2>
+                <p class="product__description fz24">Для закрепления выгодного для Вас <br> предложения необходимо только внести аванс <br> или заключить договор о партнерстве</p>
+            </div>
+    
+            <div class="product__price-block">
+                <div class="product__price">
+                    <span class="product__price-value fz115">от 45 ₽/м.п.</span>
+                    <span class="product__price-conditions fz36">от 500 м.п.</span>
+                </div>
+            </div>
+            <p class="product__tax-info fz24">Все цены указаны с учетом НДС 20%</p>
+        </div>
+      </section>
+        <div class="container">
+
+        </div>
+      </section>
+      <section class="completed">
+        <div class="container">
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide"><div class="catalog__slider-photo"><img src="img/image1.jpg" alt="range" class="catalog__slider-img"></div></li>
+                        <li class="glide__slide"><div class="catalog__slider-photo"><img src="img/image2.jpg" alt="range" class="catalog__slider-img"></div></li>
+                        <li class="glide__slide"><div class="catalog__slider-photo"><img src="img/image3.jpg" alt="range" class="catalog__slider-img"></div></li>
+                        <li class="glide__slide"><div class="catalog__slider-photo"><img src="img/image4.jpg" alt="range" class="catalog__slider-img"></div></li>
+                        <li class="glide__slide"><div class="catalog__slider-photo"><img src="img/image5.jpg" alt="range" class="catalog__slider-img"></div></li>
+                        <li class="glide__slide"><div class="catalog__slider-photo"><img src="img/image6.jpg" alt="range" class="catalog__slider-img"></div></li>
+                        <li class="glide__slide"><div class="catalog__slider-photo"><img src="img/image7.jpg" alt="range" class="catalog__slider-img"></div></li>
+                    </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left glide__arrows-left" data-glide-dir="<" style="color: var(--black);">назад</button>
+                    <button class="glide__arrow glide__arrow--right glide__arrows-right" data-glide-dir=">" style="color: var(--black);">вперёд</button>
+                </div>
+            </div>
+        </div>        
+      </section>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
 </html>
